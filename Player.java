@@ -223,6 +223,9 @@ public class Player extends Actor
             case "Speed Boost":
                 if (now - obtainedBoost <= 10000)
                 {
+                    //this line disable other active boosts
+                    invincibility = false;
+                    //actual boost below
                     setPlayerSpeed(5); 
                 }
                 else
@@ -234,6 +237,9 @@ public class Player extends Actor
             case "Instant Kill":
                 if (now - obtainedBoost <= 10000)
                 {
+                    //these two lines disable other active boosts
+                    setPlayerSpeed(3);
+                    invincibility = false;
                     //boost modifications are in the projectile classes
                 }
                 else
@@ -244,6 +250,9 @@ public class Player extends Actor
             case "Invincibility":
                 if (now - obtainedBoost <= 5000)
                 {
+                    //this line disable other active boosts
+                    setPlayerSpeed(3);
+                    //actual boost below
                     invincibility = true;
                 }
                 else

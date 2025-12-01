@@ -13,6 +13,9 @@ public class Raider extends Enemy
     private int movementCooldown;
     
     private boolean randomShooting;
+    private int bulletCounter = 0;
+    private int burstLimit = 3;
+    private double lastTimeFired = 0;
     
     /**
      * 
@@ -79,11 +82,15 @@ public class Raider extends Enemy
     
     public void shoot()
     {
-        if(Greenfoot.getRandomNumber(101) < 3)
+        double now = System.currentTimeMillis();
+        
+        if(bulletCounter < burstLimit && now - lastTimeFired >= 500)
         {
             RaiderPistolBullet raiderPistolBullet =  new  RaiderPistolBullet(enemyDirection);
             getWorld().addObject(raiderPistolBullet, getX(), getY());
             Greenfoot.playSound("pistol gunshot (edited, cropped).wav");
+            bulletCounter++;
+            lastTimeFired = now;
         }
     }
 
