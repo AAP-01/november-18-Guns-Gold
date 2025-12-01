@@ -82,5 +82,10 @@ public class Level1 extends Levels
         addObject(wall3,17,139);
         Wall wall4 = new Wall();
         addObject(wall4,246,89);
+        wall3.setLocation(152,178);
+        removeObject(wall3);
+        removeObject(wall4);
+        removeObject(wall);
+        removeObject(wall2);
     }
 }

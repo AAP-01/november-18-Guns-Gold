@@ -44,7 +44,18 @@ public class Enemy extends Actor
     
     public void loseCondition()
     {
-        if (getWorld().getObjects(Player.class).isEmpty()) {
+        boolean hasPlayer = false;
+        
+        for(Actor actor : getWorld().getObjects(Actor.class))
+        {
+            if(actor.getClass() == Player.class)
+            {
+                hasPlayer = true;
+                break;
+            }
+        }
+        
+        if (!hasPlayer) {
             World defeatScreen =  new  EndScreen();
             Greenfoot.setWorld(defeatScreen);
             Greenfoot.playSound("lose.mp3");
