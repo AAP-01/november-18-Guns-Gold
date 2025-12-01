@@ -99,12 +99,5 @@ public class Raider extends Enemy
         }
     }
 
-    public void loseCondition()
-    {
-        if (getWorld().getObjects(Player.class).isEmpty()) {
-            World defeatScreen =  new  EndScreen();
-            Greenfoot.setWorld(defeatScreen);
-            Greenfoot.playSound("lose.mp3");
-        }
-    }
+    
 }

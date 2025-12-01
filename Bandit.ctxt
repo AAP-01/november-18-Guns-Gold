@@ -12,6 +12,4 @@ comment3.target=void\ move()
 comment4.params=
 comment4.target=void\ killPlayer()
 comment4.text=\r\n\ \r\n
-comment5.params=
-comment5.target=void\ loseCondition()
-numComments=6
+numComments=5

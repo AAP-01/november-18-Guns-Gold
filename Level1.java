@@ -74,5 +74,13 @@ public class Level1 extends Levels
         addObject(invincibility,720,503);
         InstantKill instantKill = new InstantKill();
         addObject(instantKill,322,285);
+        Wall wall = new Wall();
+        addObject(wall,297,52);
+        Wall wall2 = new Wall();
+        addObject(wall2,287,24);
+        Wall wall3 = new Wall();
+        addObject(wall3,17,139);
+        Wall wall4 = new Wall();
+        addObject(wall4,246,89);
     }
 }

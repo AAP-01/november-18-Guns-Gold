@@ -100,13 +100,4 @@ public class Juggernaut extends Enemy
             bulletCounter = 0;
         }
     }
-
-    public void loseCondition()
-    {
-        if (getWorld().getObjects(Player.class).isEmpty()) {
-            World defeatScreen =  new  EndScreen();
-            Greenfoot.setWorld(defeatScreen);
-            Greenfoot.playSound("lose.mp3");
-        }
-    }
 }

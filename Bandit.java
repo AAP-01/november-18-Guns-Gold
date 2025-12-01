@@ -92,12 +92,5 @@ public class Bandit extends Enemy
         }
     }
     
-    public void loseCondition()
-    {
-        if (getWorld().getObjects(Player.class).isEmpty()) {
-            World endScreen =  new  EndScreen();
-            Greenfoot.setWorld(endScreen);
-            Greenfoot.playSound("lose.mp3");
-        }
-    }
+    
 }
