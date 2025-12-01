@@ -92,6 +92,11 @@ public class Raider extends Enemy
             bulletCounter++;
             lastTimeFired = now;
         }
+        
+        if(bulletCounter == 3 && now - lastTimeFired >= 3000)
+        {
+            bulletCounter = 0;
+        }
     }
 
     public void loseCondition()

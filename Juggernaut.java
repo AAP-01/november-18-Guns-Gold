@@ -15,7 +15,9 @@ public class Juggernaut extends Enemy
     private String Direction;
     private double heavyRifleBulletDamage = 3.0;
     
-    private boolean randomShooting;
+    private int bulletCounter = 0;
+    private int shootLimit = 1;
+    private double lastTimeFired = 0;
     
     /**
      * 
@@ -82,11 +84,20 @@ public class Juggernaut extends Enemy
     
     public void shoot()
     {
-        if(Greenfoot.getRandomNumber(101) < 1)
+        double now = System.currentTimeMillis();
+        
+        if(bulletCounter < shootLimit)
         {
             HeavyRifleBullet heavyRifleBullet =  new  HeavyRifleBullet(enemyDirection);
             getWorld().addObject(heavyRifleBullet, getX(), getY());
             Greenfoot.playSound("heavy rifle gunshot.mp3");
+            bulletCounter++;
+            lastTimeFired = now;
+        }
+        
+        if(bulletCounter == 1 && now - lastTimeFired >= 5000)
+        {
+            bulletCounter = 0;
         }
     }
 
