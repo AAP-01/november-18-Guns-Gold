@@ -5,10 +5,10 @@ import greenfoot.*;
 /**
  * 
  */
-public class Wall extends Barrier
+public class StoneWall extends Barrier
 {
 
-    public Wall()
+    public StoneWall()
     {
         GreenfootImage imageWall = getImage();
         imageWall.scale(75, 25);       

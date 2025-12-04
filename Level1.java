@@ -74,13 +74,13 @@ public class Level1 extends Levels
         addObject(invincibility,720,503);
         InstantKill instantKill = new InstantKill();
         addObject(instantKill,322,285);
-        Wall wall = new Wall();
+        StoneWall wall = new StoneWall();
         addObject(wall,297,52);
-        Wall wall2 = new Wall();
+        StoneWall wall2 = new StoneWall();
         addObject(wall2,287,24);
-        Wall wall3 = new Wall();
+        StoneWall wall3 = new StoneWall();
         addObject(wall3,17,139);
-        Wall wall4 = new Wall();
+        StoneWall wall4 = new StoneWall();
         addObject(wall4,246,89);
         wall3.setLocation(152,178);
         removeObject(wall3);
