@@ -96,19 +96,29 @@ public class Level1 extends Levels
         removeObject(wall);
         removeObject(wall2);
         
-        MossyWall mossyWall0 = new MossyWall();
-        addObject(mossyWall0,0,210);
-        MossyWall mossyWall1 = new MossyWall();
-        addObject(mossyWall1,75,210);
+        MossyWall mossyWall = new MossyWall();
+        addObject(mossyWall,25,190);
         MossyWall mossyWall2 = new MossyWall();
-        addObject(mossyWall2,175,210);
+        addObject(mossyWall2,75,190);
         MossyWall mossyWall3 = new MossyWall();
-        addObject(mossyWall3,275,210);
+        addObject(mossyWall3,125,190);
         MossyWall mossyWall4 = new MossyWall();
-        addObject(mossyWall4,375,210);
+        addObject(mossyWall4,175,190);
         MossyWall mossyWall5 = new MossyWall();
-        addObject(mossyWall5,375,110);
+        addObject(mossyWall5,225,190);
         MossyWall mossyWall6 = new MossyWall();
-        addObject(mossyWall6,375,10);
+        addObject(mossyWall6,275,190);
+        MossyWall mossyWall7 = new MossyWall();
+        addObject(mossyWall7,325,190);
+        MossyWall mossyWall8 = new MossyWall();
+        addObject(mossyWall8,375,190);
+        MossyWall mossyWall9 = new MossyWall();
+        addObject(mossyWall9,375,140);
+        MossyWall mossyWall10 = new MossyWall();
+        addObject(mossyWall10,375,90);
+        MossyWall mossyWall11 = new MossyWall();
+        addObject(mossyWall11,375,40);
+        MossyWall mossyWall12 = new MossyWall();
+        addObject(mossyWall12,375,0);
     }
 }

@@ -42,18 +42,28 @@ public class Level3 extends Levels
         addObject(pistolIcon, 75, 120);
 
         Crate crate = new Crate();
-        addObject(crate,0,210);
+        addObject(crate,25,190);
         Crate crate2 = new Crate();
-        addObject(crate2,75,210);
+        addObject(crate2,75,190);
         Crate crate3 = new Crate();
-        addObject(crate3,175,210);
+        addObject(crate3,125,190);
         Crate crate4 = new Crate();
-        addObject(crate4,275,210);
+        addObject(crate4,175,190);
         Crate crate5 = new Crate();
-        addObject(crate5,375,210);
+        addObject(crate5,225,190);
         Crate crate6 = new Crate();
-        addObject(crate6,375,110);
+        addObject(crate6,275,190);
         Crate crate7 = new Crate();
-        addObject(crate7,375,10);
+        addObject(crate7,325,190);
+        Crate crate8 = new Crate();
+        addObject(crate8,375,190);
+        Crate crate9 = new Crate();
+        addObject(crate9,375,140);
+        Crate crate10 = new Crate();
+        addObject(crate10,375,90);
+        Crate crate11 = new Crate();
+        addObject(crate11,375,40);
+        Crate crate12 = new Crate();
+        addObject(crate12,375,0);
     }
 }

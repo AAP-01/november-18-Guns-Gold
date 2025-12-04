@@ -24,7 +24,19 @@ public class InstantKill extends Boosts
         if(player != null)
         {
             InstantKillIcon InstantKillIcon = new InstantKillIcon();
-            getWorld().addObject(InstantKillIcon, 260, 50);
+            getWorld().addObject(InstantKillIcon, 300, 50);
+            
+            if(((Player)player).getBoost() == "Invincibility")
+            {
+                InvincibilityIcon invincibilityIcon = (InvincibilityIcon) getWorld().getObjects(InvincibilityIcon.class).get(0);
+                getWorld().removeObject(invincibilityIcon);
+            }
+            else if(((Player)player).getBoost() == "Speed Boost")
+            {
+                SpeedBoostIcon speedBoostIcon = (SpeedBoostIcon) getWorld().getObjects(SpeedBoostIcon.class).get(0);
+                getWorld().removeObject(speedBoostIcon);
+            }
+            
             ((Player)player).setBoost("Instant Kill");
             
             getWorld().removeObject(this);

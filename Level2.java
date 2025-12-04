@@ -65,20 +65,37 @@ public class Level2 extends Levels
         addObject(treasure10,806,567);
         Juggernaut juggernaut = new Juggernaut();
         addObject(juggernaut,555,493);
-        
-        StoneWall stoneWall0 = new StoneWall();
-        addObject(stoneWall0,0,210);
-        StoneWall stoneWall1 = new StoneWall();
-        addObject(stoneWall1,75,210);
+
+        StoneWall stoneWall = new StoneWall();
+        addObject(stoneWall,25,190);
         StoneWall stoneWall2 = new StoneWall();
-        addObject(stoneWall2,175,210);
+        addObject(stoneWall2,75,190);
         StoneWall stoneWall3 = new StoneWall();
-        addObject(stoneWall3,275,210);
+        addObject(stoneWall3,125,190);
         StoneWall stoneWall4 = new StoneWall();
-        addObject(stoneWall4,375,210);
+        addObject(stoneWall4,175,190);
         StoneWall stoneWall5 = new StoneWall();
-        addObject(stoneWall5,375,110);
+        addObject(stoneWall5,225,190);
         StoneWall stoneWall6 = new StoneWall();
-        addObject(stoneWall6,375,10);
+        addObject(stoneWall6,275,190);
+        StoneWall stoneWall7 = new StoneWall();
+        addObject(stoneWall7,325,190);
+        StoneWall stoneWall8 = new StoneWall();
+        addObject(stoneWall8,375,190);
+        StoneWall stoneWall9 = new StoneWall();
+        addObject(stoneWall9,375,140);
+        StoneWall stoneWall10 = new StoneWall();
+        addObject(stoneWall10,375,90);
+        StoneWall stoneWall11 = new StoneWall();
+        addObject(stoneWall11,375,40);
+        StoneWall stoneWall12 = new StoneWall();
+        addObject(stoneWall12,375,0);
+        
+        InstantKill instantKill = new InstantKill();
+        addObject(instantKill,216,584);
+        SpeedBoost speedBoost = new SpeedBoost();
+        addObject(speedBoost,134,353);
+        Invincibility invincibility = new Invincibility();
+        addObject(invincibility,96,486);
     }
 }

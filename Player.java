@@ -218,6 +218,8 @@ public class Player extends Actor
     {
         if(boostType == null) return;
         double now = System.currentTimeMillis();
+        Actor player = getOneIntersectingObject(Player.class);
+        
         switch (boostType)
         {
             case "Speed Boost":
@@ -232,6 +234,9 @@ public class Player extends Actor
                 {
                     setPlayerSpeed(3);
                     boostType = null;
+                    
+                    SpeedBoostIcon speedBoostIcon =  (SpeedBoostIcon) getWorld().getObjects(SpeedBoostIcon.class).get(0);
+                    getWorld().removeObject(speedBoostIcon);
                 }
                 break;
             case "Instant Kill":
@@ -245,6 +250,9 @@ public class Player extends Actor
                 else
                 {
                     boostType = null;
+                    
+                    InstantKillIcon instantKillIcon =  (InstantKillIcon) getWorld().getObjects(InstantKillIcon.class).get(0);
+                    getWorld().removeObject(instantKillIcon);
                 }
                 break;
             case "Invincibility":
@@ -259,6 +267,9 @@ public class Player extends Actor
                 {
                     invincibility = false;
                     boostType = null;
+                    
+                    InvincibilityIcon invincibilityIcon =  (InvincibilityIcon) getWorld().getObjects(InvincibilityIcon.class).get(0);
+                    getWorld().removeObject(invincibilityIcon);
                 }
                 break;
         }
