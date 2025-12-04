@@ -22,8 +22,6 @@ public class Raider extends Enemy
      */
     public Raider()
     {
-        GreenfootImage imageEnemy = getImage();
-        imageEnemy.scale(75, 75);
         health = 12.0;
     }
 

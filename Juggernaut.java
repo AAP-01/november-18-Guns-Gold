@@ -24,8 +24,6 @@ public class Juggernaut extends Enemy
      */
     public Juggernaut()
     {
-        GreenfootImage imageEnemy = getImage();
-        imageEnemy.scale(75, 75);
         health = 20.0;
     }
 

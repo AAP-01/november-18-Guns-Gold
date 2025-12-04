@@ -16,8 +16,6 @@ public class Bandit extends Enemy
      */
     public Bandit()
     {
-        GreenfootImage imageEnemy = getImage();
-        imageEnemy.scale(75, 75);
         health = 6.0;
     }
 
