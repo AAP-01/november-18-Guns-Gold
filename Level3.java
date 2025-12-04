@@ -8,7 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Level3 extends Levels
 {
-
     /**
      * Constructor for objects of class Level3.
      * 
@@ -17,6 +16,14 @@ public class Level3 extends Levels
     {    
         prepare();
         whichLevel = "Level2";
+    }
+    
+    public void act()
+    {
+        if (Greenfoot.isKeyDown("escape"))
+        {
+            Greenfoot.setWorld(new MainScreen()); 
+        }
     }
     
     private void prepare()

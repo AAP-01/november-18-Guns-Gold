@@ -18,6 +18,14 @@ public class Level2 extends Levels
         whichLevel = "Level2";
     }
     
+    public void act()
+    {
+        if (Greenfoot.isKeyDown("escape"))
+        {
+            Greenfoot.setWorld(new MainScreen()); 
+        }
+    }
+    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
