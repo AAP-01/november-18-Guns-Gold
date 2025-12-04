@@ -18,10 +18,10 @@ public class SplashScreen extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1000, 1000, 1);
-        showText("Game Programming 1", 500, 100);
-        showText("Game by:", 500, 600);
-        showText("John Benedict Castroverde", 500, 650);
-        showText("Megh Patel", 500, 670);
+        showText("Game Programming 1", 500, 625);
+        showText("Game by:", 500, 780);
+        showText("John Benedict Castroverde", 500, 830);
+        showText("Megh Patel", 500, 850);
         prepare();
     }
 
@@ -42,6 +42,6 @@ public class SplashScreen extends World
     private void prepare()
     {
         VanierLogo vanierLogo = new VanierLogo();
-        addObject(vanierLogo,500,850);
+        addObject(vanierLogo,500,950);
     }
 }
