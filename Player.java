@@ -69,6 +69,7 @@ public class Player extends Actor
         }
         if (Greenfoot.isKeyDown("a")) {
             setLocation(getX() - speed, getY());
+            setImage("Player Flipped.png");
             if (isTouching(Barrier.class)) {
                 setLocation(getX() + speed, getY());
             }
@@ -76,6 +77,7 @@ public class Player extends Actor
         }
         if (Greenfoot.isKeyDown("d")) {
             setLocation(getX() + speed, getY());
+            setImage("Player.png");
             if (isTouching(Barrier.class)) {
                 setLocation(getX() - speed, getY());
             }
