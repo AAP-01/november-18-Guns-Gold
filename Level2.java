@@ -65,5 +65,20 @@ public class Level2 extends Levels
         addObject(treasure10,806,567);
         Juggernaut juggernaut = new Juggernaut();
         addObject(juggernaut,555,493);
+        
+        StoneWall stoneWall0 = new StoneWall();
+        addObject(stoneWall0,0,210);
+        StoneWall stoneWall1 = new StoneWall();
+        addObject(stoneWall1,75,210);
+        StoneWall stoneWall2 = new StoneWall();
+        addObject(stoneWall2,175,210);
+        StoneWall stoneWall3 = new StoneWall();
+        addObject(stoneWall3,275,210);
+        StoneWall stoneWall4 = new StoneWall();
+        addObject(stoneWall4,375,210);
+        StoneWall stoneWall5 = new StoneWall();
+        addObject(stoneWall5,375,110);
+        StoneWall stoneWall6 = new StoneWall();
+        addObject(stoneWall6,375,10);
     }
 }

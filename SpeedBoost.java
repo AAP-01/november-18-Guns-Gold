@@ -24,7 +24,7 @@ public class SpeedBoost extends Boosts
         if(player != null)
         {
             SpeedBoostIcon speedBoostIcon = new SpeedBoostIcon();
-            getWorld().addObject(speedBoostIcon, 175, 120);
+            getWorld().addObject(speedBoostIcon, 260, 50);
             ((Player)player).setBoost("Speed Boost");
             
             getWorld().removeObject(this);

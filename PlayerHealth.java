@@ -30,11 +30,11 @@ public class PlayerHealth extends Player
     {
         if(player.playerHealth == halfHeart)
         {
-            setImage("half heart (edited, scaled down, painted).png");
+            setImage("Half Heart(edited, scaled down, painted).png");
         }
         else if(player.playerHealth <= emptyHeart)
         {
-            setImage("empty heart (edited, scaled down, painted).png");
+            setImage("Empty Heart(edited, scaled down, painted).png");
         }
     }
 }

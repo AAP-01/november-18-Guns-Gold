@@ -15,6 +15,14 @@ public class Level1 extends Levels
         prepare();
         whichLevel = "Level1";
     }
+    
+    public void act()
+    {
+        if (Greenfoot.isKeyDown("escape"))
+        {
+            Greenfoot.setWorld(new MainScreen()); 
+        }
+    }
 
     /**
      * Prepare the world for the start of the program.
@@ -87,5 +95,20 @@ public class Level1 extends Levels
         removeObject(wall4);
         removeObject(wall);
         removeObject(wall2);
+        
+        MossyWall mossyWall0 = new MossyWall();
+        addObject(mossyWall0,0,210);
+        MossyWall mossyWall1 = new MossyWall();
+        addObject(mossyWall1,75,210);
+        MossyWall mossyWall2 = new MossyWall();
+        addObject(mossyWall2,175,210);
+        MossyWall mossyWall3 = new MossyWall();
+        addObject(mossyWall3,275,210);
+        MossyWall mossyWall4 = new MossyWall();
+        addObject(mossyWall4,375,210);
+        MossyWall mossyWall5 = new MossyWall();
+        addObject(mossyWall5,375,110);
+        MossyWall mossyWall6 = new MossyWall();
+        addObject(mossyWall6,375,10);
     }
 }

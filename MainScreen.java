@@ -17,7 +17,6 @@ public class MainScreen extends World
     public MainScreen()
     {
         super(1000, 1000, 1);
-        showText("Guns & Gold", 500, 300);
         prepare();
     }
 
@@ -28,10 +27,10 @@ public class MainScreen extends World
     private void prepare()
     {
         LevelOne levelOne = new LevelOne();
-        addObject(levelOne, 500, 400);
+        addObject(levelOne, 200, 800);
         LevelTwo levelTwo = new LevelTwo();
-        addObject(levelTwo, 500, 510);
+        addObject(levelTwo, 500, 800);
         LevelThree levelThree = new LevelThree();
-        addObject(levelThree, 500, 620);
+        addObject(levelThree, 800, 800);
     }
 }

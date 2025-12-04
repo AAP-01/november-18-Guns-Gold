@@ -28,8 +28,8 @@ public class EndScreen extends World
     private void prepare()
     {
         Replay replay = new Replay();
-        addObject(replay,350,600);
+        addObject(replay,300,825);
         ReturnToMenu returnToMenu = new ReturnToMenu();
-        addObject(returnToMenu,650,600);
+        addObject(returnToMenu,700,825);
     }
 }

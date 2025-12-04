@@ -14,7 +14,7 @@ public class ReturnToMenu extends EndScreenButtons
      */
     public void act()
     {
-        super.setImage("return to menu selected.jpg", "return to menu.jpg");
+        super.setImage("Return to Menu Selected.png", "Return to Menu.png");
         toMenu();
     }
     

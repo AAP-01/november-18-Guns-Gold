@@ -19,7 +19,7 @@ public class Replay extends EndScreenButtons
      */
     public void act()
     {
-        super.setImage("replay selected.jpg", "replay.jpg");
+        super.setImage("Replay Selected.png", "Replay.png");
         replayLevel();
     }
     

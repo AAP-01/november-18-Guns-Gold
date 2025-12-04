@@ -30,8 +30,6 @@ public class Player extends Actor
      */
     public Player()
     {
-        GreenfootImage imagePlayer = getImage();
-        imagePlayer.scale(75, 75);
         playerHealth = 6.0;
         speed = 3;
         invincibility = false;

@@ -14,7 +14,7 @@ public class LevelOne extends MainMenuButtons
      */
     public void act()
     {
-        super.setImage("Level1Selected.jpg", "Level1.jpg");
+        super.setImage("Level 1 Selected.png", "Level 1.png");
         playLevel();
     }
     

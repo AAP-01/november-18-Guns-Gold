@@ -10,8 +10,7 @@ public class StoneWall extends Barrier
 
     public StoneWall()
     {
-        GreenfootImage imageWall = getImage();
-        imageWall.scale(75, 25);       
+    
     }
     
     /**
