@@ -54,6 +54,7 @@ public class Bandit extends Enemy
             case 2: //left
                 if (getX() - speed <= 38 || getOneObjectAtOffset(-38, 0, Barrier.class) != null) {
                     blocked = true;
+                    setImage("Bandit Flipped.png");
                 } else {
                     setLocation(getX() - speed, getY());
                 }
@@ -61,6 +62,7 @@ public class Bandit extends Enemy
             case 3: //right
                 if (getX() + speed >= worldWidth - 38 || getOneObjectAtOffset(38, 0, Barrier.class) != null) {
                     blocked = true;
+                    setImage("Bandit Flipped.png");
                 } else {
                     setLocation(getX() + speed, getY());
                 }
