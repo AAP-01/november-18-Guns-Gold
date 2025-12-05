@@ -62,6 +62,7 @@ public class Raider extends Enemy
                     blocked = true;
                 } else {
                     setLocation(getX() - speed, getY());
+                    setImage("Raider Flipped.png");
                 }
                 break;
             case 3: //right
@@ -69,6 +70,7 @@ public class Raider extends Enemy
                     blocked = true;
                 } else {
                     setLocation(getX() + speed, getY());
+                    setImage("Raider.png");
                 }
                 break;
         }

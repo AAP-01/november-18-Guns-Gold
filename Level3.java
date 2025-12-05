@@ -15,7 +15,7 @@ public class Level3 extends Levels
     public Level3()
     {    
         prepare();
-        whichLevel = "Level2";
+        whichLevel = "Level3";
     }
     
     public void act()

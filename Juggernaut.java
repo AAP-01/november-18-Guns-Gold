@@ -64,6 +64,7 @@ public class Juggernaut extends Enemy
                     blocked = true;
                 } else {
                     setLocation(getX() - speed, getY());
+                    setImage("Juggernaut Flipped.png");
                 }
                 break;
             case 3: //right
@@ -71,6 +72,7 @@ public class Juggernaut extends Enemy
                     blocked = true;
                 } else {
                     setLocation(getX() + speed, getY());
+                    setImage("Juggernaut.png");
                 }
                 break;
         }

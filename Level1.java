@@ -246,14 +246,8 @@ public class Level1 extends Levels
         Rifle rifle = new Rifle();
         addObject(rifle,88,293);
 
-        Bandit bandit = new Bandit();
-        addObject(bandit,941,924);
-        Bandit bandit2 = new Bandit();
-        addObject(bandit2,492,940);
         Bandit bandit3 = new Bandit();
         addObject(bandit3,220,734);
-        Bandit bandit4 = new Bandit();
-        addObject(bandit4,585,264);
         Bandit bandit5 = new Bandit();
         addObject(bandit5,675,83);
         Bandit bandit6 = new Bandit();
