@@ -88,7 +88,12 @@ public class Raider extends Enemy
         {
             RaiderPistolBullet raiderPistolBullet =  new  RaiderPistolBullet(enemyDirection);
             getWorld().addObject(raiderPistolBullet, getX(), getY());
-            Greenfoot.playSound("pistol gunshot (edited, cropped).wav");
+            
+            GreenfootSound sound = new
+            GreenfootSound("pistol gunshot (edited, cropped).wav");
+            sound.setVolume(75);
+            sound.play();
+            
             bulletCounter++;
             lastTimeFired = now;
         }

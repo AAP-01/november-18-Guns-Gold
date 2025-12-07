@@ -90,7 +90,12 @@ public class Juggernaut extends Enemy
         {
             HeavyRifleBullet heavyRifleBullet =  new  HeavyRifleBullet(enemyDirection);
             getWorld().addObject(heavyRifleBullet, getX(), getY());
-            Greenfoot.playSound("heavy rifle gunshot.mp3");
+            
+            GreenfootSound sound = new
+            GreenfootSound("heavy rifle gunshot(edited, trimmed, decrease volume).wav");
+            sound.setVolume(75);
+            sound.play();
+            
             bulletCounter++;
             lastTimeFired = now;
         }

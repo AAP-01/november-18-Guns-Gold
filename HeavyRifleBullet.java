@@ -88,6 +88,7 @@ public class HeavyRifleBullet extends Actor
             {
                 Player p = (Player) player;
                 p.takeDamage(heavyRifleBulletDamage);
+                
                 getWorld().removeObject(this);
                 return;
             }
