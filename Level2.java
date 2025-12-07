@@ -318,5 +318,26 @@ public class Level2 extends Levels
         addObject(treasure21,597,264);
         Treasure treasure22 = new Treasure();
         addObject(treasure22,592,117);
+        Treasure treasure23 = new Treasure();
+        addObject(treasure23,146,731);
+        Treasure treasure24 = new Treasure();
+        addObject(treasure24,47,732);
+        Treasure treasure25 = new Treasure();
+        addObject(treasure25,939,820);
+        Treasure treasure26 = new Treasure();
+        addObject(treasure26,588,859);
+        Treasure treasure27 = new Treasure();
+        addObject(treasure27,837,959);
+        Treasure treasure28 = new Treasure();
+        addObject(treasure28,841,60);
+        Treasure treasure29 = new Treasure();
+        addObject(treasure29,441,33);
+        Treasure treasure30 = new Treasure();
+        addObject(treasure30,442,139);
+        
+        Bandit bandit3 = new Bandit();
+        addObject(bandit3,438,263);
+        Bandit bandit4 = new Bandit();
+        addObject(bandit4,445,780);
     }
 }
