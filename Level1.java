@@ -6,7 +6,9 @@ import greenfoot.*;
  * 
  */
 public class Level1 extends Levels
-{
+{ 
+    private GreenfootSound level1Music;
+    
     /**
      * Constructor for objects of class MyWorld.
      */
@@ -14,16 +16,30 @@ public class Level1 extends Levels
     {
         prepare();
         whichLevel = "Level1";
+        level1Music = new GreenfootSound("Level 1 music.mp3");
+        level1Music.setVolume(60);
+    }
+    
+    public void started()
+    {
+        level1Music.playLoop();
+    }
+    
+    public void stopped()
+    {
+        level1Music.stop();
     }
     
     public void act()
     {
+        started();
         if (Greenfoot.isKeyDown("escape"))
         {
-            Greenfoot.setWorld(new MainScreen()); 
+            Greenfoot.setWorld(new MainScreen());
+            this.stopped();
         }
     }
-
+    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
@@ -231,9 +247,7 @@ public class Level1 extends Levels
         MossyWall mossyWall92 = new MossyWall();
         addObject(mossyWall92,975,840);
         MossyWall mossyWall93 = new MossyWall();
-        addObject(mossyWall93,875,990);
-        MossyWall mossyWall94 = new MossyWall();
-        addObject(mossyWall94,825,990);
+        addObject(mossyWall93,875,890);
         MossyWall mossyWall95 = new MossyWall();
         addObject(mossyWall95,675,840);
 
@@ -246,21 +260,10 @@ public class Level1 extends Levels
         Rifle rifle = new Rifle();
         addObject(rifle,88,293);
 
-        Bandit bandit3 = new Bandit();
-        addObject(bandit3,220,734);
-        Bandit bandit5 = new Bandit();
-        addObject(bandit5,675,83);
-        Bandit bandit6 = new Bandit();
-        addObject(bandit6,943,762);
-
-        Raider raider = new Raider();
-        addObject(raider,250,560);
-
         Treasure treasure = new Treasure();
         addObject(treasure,407,960);
         Treasure treasure2 = new Treasure();
         addObject(treasure2,556,958);
-        bandit3.setLocation(195,715);
         Treasure treasure3 = new Treasure();
         addObject(treasure3,195,715);
         Treasure treasure4 = new Treasure();
@@ -311,5 +314,15 @@ public class Level1 extends Levels
         addObject(treasure26,929,60);
         Treasure treasure27 = new Treasure();
         addObject(treasure27,445,45);
+        
+        Bandit bandit3 = new Bandit();
+        addObject(bandit3,220,734);
+        Bandit bandit5 = new Bandit();
+        addObject(bandit5,675,83);
+        Bandit bandit6 = new Bandit();
+        addObject(bandit6,943,762);
+
+        Raider raider = new Raider();
+        addObject(raider,250,560);
     }
 }

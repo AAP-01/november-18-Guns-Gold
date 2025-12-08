@@ -8,6 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Level2 extends Levels
 {
+    private GreenfootSound level2Music;
+    
     /**
      * Constructor for objects of class Level2.
      * 
@@ -16,13 +18,27 @@ public class Level2 extends Levels
     {     
         prepare();
         whichLevel = "Level2";
+        level2Music = new GreenfootSound("Level 2 music.mp3");
+        level2Music.setVolume(50);
+    }
+    
+    public void started()
+    {
+        level2Music.playLoop();
+    }
+    
+    public void stopped()
+    {
+        level2Music.stop();
     }
     
     public void act()
     {
+        started();
         if (Greenfoot.isKeyDown("escape"))
         {
-            Greenfoot.setWorld(new MainScreen()); 
+            Greenfoot.setWorld(new MainScreen());
+            this.stopped();
         }
     }
     

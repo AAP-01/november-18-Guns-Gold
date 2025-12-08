@@ -309,6 +309,9 @@ public class Player extends Actor
     public void winCondition()
     {
         if (getWorld().getObjects(Treasure.class).isEmpty() || getWorld().getObjects(Enemy.class).isEmpty()) {
+            World level = getWorld();
+            level.stopped();
+            
             World endScreen =  new  EndScreen();
             Greenfoot.setWorld(endScreen);
             Greenfoot.playSound("win.mp3");

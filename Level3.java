@@ -8,6 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Level3 extends Levels
 {
+    private GreenfootSound level3Music;
+    
     /**
      * Constructor for objects of class Level3.
      * 
@@ -16,13 +18,27 @@ public class Level3 extends Levels
     {    
         prepare();
         whichLevel = "Level3";
+        level3Music = new GreenfootSound("Level 3 music.mp3");
+        level3Music.setVolume(50);
+    }
+    
+    public void started()
+    {
+        level3Music.playLoop();
+    }
+    
+    public void stopped()
+    {
+        level3Music.stop();
     }
     
     public void act()
     {
+        started();
         if (Greenfoot.isKeyDown("escape"))
         {
-            Greenfoot.setWorld(new MainScreen()); 
+            Greenfoot.setWorld(new MainScreen());
+            this.stopped();
         }
     }
     
@@ -310,27 +326,6 @@ public class Level3 extends Levels
         Crate crate79 = new Crate();
         addObject(crate79,125,990);
 
-        Juggernaut juggernaut = new Juggernaut();
-        addObject(juggernaut,926,909);
-        Juggernaut juggernaut2 = new Juggernaut();
-        addObject(juggernaut2,456,65);
-        Juggernaut juggernaut3 = new Juggernaut();
-        addObject(juggernaut3,103,512);
-
-        Raider raider = new Raider();
-        addObject(raider,642,264);
-        Raider raider2 = new Raider();
-        addObject(raider2,108,320);
-        Raider raider3 = new Raider();
-        addObject(raider3,648,666);
-        Bandit bandit = new Bandit();
-        addObject(bandit,99,892);
-        removeObject(bandit);
-        Raider raider4 = new Raider();
-        addObject(raider4,948,212);
-        Raider raider5 = new Raider();
-        addObject(raider5,925,422);
-
         SpeedBoost speedBoost = new SpeedBoost();
         addObject(speedBoost,837,135);
         Invincibility invincibility = new Invincibility();
@@ -395,5 +390,27 @@ public class Level3 extends Levels
         addObject(treasure25,494,912);
         Treasure treasure26 = new Treasure();
         addObject(treasure26,643,799);
+        
+        Juggernaut juggernaut = new Juggernaut();
+        addObject(juggernaut,926,909);
+        Juggernaut juggernaut2 = new Juggernaut();
+        addObject(juggernaut2,456,65);
+        Juggernaut juggernaut3 = new Juggernaut();
+        addObject(juggernaut3,103,512);
+
+        Raider raider = new Raider();
+        addObject(raider,642,264);
+        Raider raider2 = new Raider();
+        addObject(raider2,108,320);
+        Raider raider3 = new Raider();
+        addObject(raider3,648,666);
+        
+        Bandit bandit = new Bandit();
+        addObject(bandit,99,892);
+        removeObject(bandit);
+        Raider raider4 = new Raider();
+        addObject(raider4,948,212);
+        Raider raider5 = new Raider();
+        addObject(raider5,925,422);
     }
 }

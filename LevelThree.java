@@ -23,6 +23,9 @@ public class LevelThree extends MainMenuButtons
         if (Greenfoot.mouseClicked(this))
         {
             Greenfoot.setWorld(new Level3());
+            
+            MainScreen mainScreen = (MainScreen) getWorld();
+            mainScreen.stopped();
         }
     }
 }

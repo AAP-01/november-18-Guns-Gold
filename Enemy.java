@@ -56,6 +56,9 @@ public class Enemy extends Actor
         }
         
         if (!hasPlayer) {
+            World level = getWorld();
+            level.stopped();
+            
             World defeatScreen =  new  EndScreen();
             Greenfoot.setWorld(defeatScreen);
             Greenfoot.playSound("lose.mp3");

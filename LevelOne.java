@@ -23,6 +23,9 @@ public class LevelOne extends MainMenuButtons
         if (Greenfoot.mouseClicked(this))
         {
             Greenfoot.setWorld(new Level1());
+            
+            MainScreen mainScreen = (MainScreen) getWorld();
+            mainScreen.stopped();
         }
     }
 }

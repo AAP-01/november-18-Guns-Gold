@@ -23,6 +23,9 @@ public class LevelTwo extends MainMenuButtons
         if (Greenfoot.mouseClicked(this))
         {
             Greenfoot.setWorld(new Level2());
+            
+            MainScreen mainScreen = (MainScreen) getWorld();
+            mainScreen.stopped();
         }
     }
 }

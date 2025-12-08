@@ -1,4 +1,4 @@
-import greenfoot.World;
+import greenfoot.*;
 
 /**
  * Write a description of class MainScreen here.
@@ -8,8 +8,7 @@ import greenfoot.World;
  */
 public class MainScreen extends World
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private GreenfootSound mainScreenMusic;
 
     /**
      * Constructor for objects of class MainScreen
@@ -18,6 +17,22 @@ public class MainScreen extends World
     {
         super(1000, 1000, 1);
         prepare();
+        mainScreenMusic = new GreenfootSound("Main Screen music.mp3");
+    }
+    
+    public void started()
+    {
+        mainScreenMusic.playLoop();
+    }
+    
+    public void stopped()
+    {
+        mainScreenMusic.stop();
+    }
+    
+    public void act()
+    {
+        started();
     }
 
     /**
